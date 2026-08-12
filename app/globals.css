@@ -1,0 +1,167 @@
+:root {
+  --indigo: #1b2a4a;
+  --indigo-deep: #131f38;
+  --ochre: #c97d2c;
+  --ochre-light: #e4a85e;
+  --teal: #2f7565;
+  --teal-light: #dceae6;
+  --bg: #faf8f4;
+  --card: #ffffff;
+  --sand: #f1ebdd;
+  --ink: #22262b;
+  --muted: #8a8578;
+  --line: #e7e1d3;
+  --danger: #b8503d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "IBM Plex Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  color: var(--indigo-deep);
+  margin: 0;
+}
+
+.label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+
+.btn {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: var(--ochre);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--ochre-light);
+}
+
+.btn.ghost {
+  background: #fff;
+  border: 1px solid var(--line);
+  color: var(--indigo);
+}
+
+input {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13.5px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  width: 100%;
+  background: #fff;
+  color: var(--ink);
+}
+
+input:focus {
+  outline: 2px solid var(--ochre-light);
+  outline-offset: 1px;
+}
+
+.error-text {
+  color: var(--danger);
+  font-size: 12.5px;
+  margin-top: 6px;
+}
+
+.auth-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 20px 50px -20px rgba(19, 31, 56, 0.25);
+}
+
+.auth-card .brand-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--ochre), var(--teal));
+  margin-bottom: 14px;
+}
+
+.auth-card h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.auth-card p.sub {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0 0 22px;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+.field label {
+  font-size: 12.5px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+
+.auth-card .btn {
+  width: 100%;
+  margin-top: 6px;
+  padding: 11px;
+}
+
+.switch-link {
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-top: 18px;
+}
+
+.switch-link a {
+  color: var(--ochre);
+  font-weight: 600;
+  text-decoration: none;
+}
